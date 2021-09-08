@@ -17,7 +17,7 @@ WORKFLOW_NAMESPACE=
 helm dependency update charts/reference-spring-boot-mvn-jkube-workflow
 
 helm secrets upgrade --install \
-    ref-spring-boot-jkube-typ ./charts/reference-spring-boot-mvn-jkube-workflow \
+    ref-sb-mvn-jkube-workflow-typ ./charts/reference-spring-boot-mvn-jkube-workflow \
     -f charts/reference-spring-boot-mvn-jkube-workflow/values.yaml \
     -f charts/reference-spring-boot-mvn-jkube-workflow/secrets.yaml \
     --namespace ${WORKFLOW_NAMESPACE} \
